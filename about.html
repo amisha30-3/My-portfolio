@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amisha-ghosh - Portfolio</title>
+    <style>
+        *{
+            background-color: #0d1d31; /* Dark background */
+            color: #ffffff; /* White text */
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+       .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: static;
+        }
+        .main-content {
+            text-align: center;
+        }
+        .name {
+            color: #4f46e5; /* Indigo color */
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .buttons a {
+            margin-right: 10px;
+            color: #ffffff; /* White text */
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: rgb(166, 73, 11);
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px;
+        }
+        .buttons a:hover {
+            background-color: #4f46e5; /* Indigo color on hover */
+            color: #ffffff; /* White text on hover */
+            scale: 1.05; /* Slightly enlarge on hover */    
+        }
+         
+        div{
+            height: 60px;
+        }
+        a{
+            text-decoration-line: none;
+            margin-right: 200px;
+        }
+        #logo{
+        font-size: 16px;
+        background-color: rgba(40, 74, 80, 0.471);
+        }
+        button{
+            background-color: #f08804;
+        }
+        .edcation{
+            background-color: #1a202c; /* Darker background for the section */
+            padding: 40px 0;
+            color: #cbd5e0; /* Light gray color for text */
+        }
+        .education-table-container {
+            width: 90%;
+            margin: 40px auto;
+            background-color: #1a202c; /* Darker background for the table */
+            border-radius: 8px;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1em;
+            color: #cbd5e0;
+        }
+        .education-table th,
+        .education-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #2d3748; /* Darker border for rows */
+        }
+        .education-table th {
+            background-color: #2d3748; /* Header background */
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .education-table tbody tr:hover {
+            background-color: #2a3342; /* Hover effect for rows */
+        }
+        .education-table tbody tr:last-child td {
+            border-bottom: none; /* No border for the last row */
+        }
+        form{
+            width:400px;
+            background-color: #FEEBF6;
+            padding: 20px;
+            border-radius:8px;
+            box-shadow: 0010px
+            rgba(0,0,0,0.1);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            }
+            fieldset{
+                border:1px solid black;
+                padding:15 px;
+                margin:0;
+            }
+            legend{
+            font-weight: bold;
+            margin-bottom:10px;
+            text-align: center;
+            }
+            label{
+            display:block;
+            margin-bottom:5px;
+            }
+            input[type="text"],input[type="email"],input[type="password"],textarea{
+            width:calc(100%-20px);
+            padding:8px;
+            margin-bottom:10px;
+            box-sizing:border-box;
+            border:1px solid #ccc;
+            border-radius:4px;
+            }
+            input[type="radio"]{
+            margin-left:20px;
+            }
+            button {
+                padding: 12px;
+                font-size: 15px;
+                font-weight: 200;
+                border: none;
+                color:black;
+                margin-left: 0px;
+                margin-top: 30px ;
+                transition: .3s linear;
+                cursor: pointer;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+
+            button:hover {
+                scale: .8;
+            }
+            .submit {
+                color: black;
+                border-radius: 5px;
+               margin-left: 20%;
+            }
+            form {
+                background-color: #FEEBF6;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 10px rgba(0,0,0,0.1);
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-style: italic;
+                margin-left: 35%;
+                font-size: larger;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+    <nav style="font-size: 32px; height: 42px;"  >
+    <div style="background-color: rgba(40, 74, 80, 0.471);">
+        <a id="logo" class="logo" style="color: rgb(255, 255, 255);" href="./home.html">Amisha Ghosh</a>
+        <a id="logo" href="./education.html">Education</a>
+        <a id="logo" href="./contact.html">Skills & Hobbies</a>
+        <a id="logo" href="./about.html">Contact Us</a>
+    </header>
+    <form> 
+            <fieldset>
+                <legend>
+                    Contact me
+                </legend>
+                <div>
+                <label> Full name</label>
+                <input type="text" name="name">
+                </input>
+                </div>
+                <label> Email Id</label>
+                <input type="email" name="email">
+                
+                <label>Password</label>
+                <input type="password" name="confirm password">
+                <label>Gender:</label>
+               <label>
+                 <input type="radio" name="gender" value="male"> Male 
+                </label><br>
+               <label>
+                  <input type="radio" name="gender" value="female"> Female
+                </label><br>
+                <label>
+                  <input type="radio" name="gender" value="other"> Other
+                </label>
+                <Label><b>Hobbies :</b></Label>
+                <div id="hobbies" class="hobbies">                
+                <input type="checkbox">Cooking
+                <input type="checkbox">Travelling
+                <input type="checkbox">Reading
+                <input type="checkbox">Painting
+                <br>
+                <input type="checkbox">Sports
+                <input type="checkbox">Music
+                <input type="checkbox">Photography 
+                <input type="checkbox">Gaming
+                <br>
+                <button class="submit" type="reset" style="background:#D9A299">Reset</button>
+                <button class="submit" type="submit" style="background:#D9A299">Submit</button>
+             </fieldset>
+        </form>
+</body>
+</html>
+
